@@ -160,6 +160,29 @@ body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:
   display:flex;align-items:center;justify-content:space-between}
 .dash-note{font-size:10.5px;color:var(--subtle)}
 .dash-update{font-family:var(--font-m);font-size:10px;color:var(--subtle)}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE · TABLET (≤768px)
+   ───────────────────────────────────────── */
+@media (max-width:768px){
+  .topbar-inner{flex-direction:column;min-height:auto}
+  .topbar-sponsors{border-right:none;border-bottom:1px solid var(--border);justify-content:center;padding:8px 16px}
+  .content{padding:20px 16px 40px}
+  .hero-landing{padding:26px 22px}
+  .hero-title{font-size:23px}
+  .portals{grid-template-columns:1fr;gap:14px;margin-bottom:24px}
+  .kpi-grid{grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+  .chart-grid-2,.chart-grid-3,.resumen-grid{grid-template-columns:1fr;gap:14px}
+  .dash-footer{flex-direction:column;gap:6px;align-items:flex-start;padding:12px 16px}
+}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE · SMARTPHONE (≤480px)
+   ───────────────────────────────────────── */
+@media (max-width:480px){
+  .hero-title{font-size:20px}
+  .kpi-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -207,7 +230,7 @@ body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:
     <div class="sec-lbl">Portafolios de Capacidades</div>
     <div class="portals">
 
-      <a class="portal-card" href="unidades_academicas.html">
+      <a class="portal-card" href="Portafolio_Facultades.html">
         <div class="portal-stripe" style="background:linear-gradient(90deg,#0D2355,#1B4FA8)"></div>
         <div class="portal-body">
           <div class="portal-icon" style="background:#EBF3FF">🏛️</div>
@@ -232,7 +255,7 @@ body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:
         <div class="portal-arrow" style="background:#EBF3FF;color:#1B4FA8">→</div>
       </a>
 
-      <a class="portal-card" href="centros_hub.html">
+      <a class="portal-card" href="Portafolio_centros_V2.html">
         <div class="portal-stripe" style="background:linear-gradient(90deg,#065F46,#1A7A3A)"></div>
         <div class="portal-body">
           <div class="portal-icon" style="background:#E8F5EC">🧪</div>
